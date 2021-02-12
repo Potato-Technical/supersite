@@ -1,19 +1,273 @@
 <!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-        <header>
-        </header>
-        <main>
+<html lang="en">
 
-        </main>
-        <footer>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="VOTRE URL DE KIT FONT AWESOME" crossorigin="anonymous">
 
-        </footer>
-    </body>
+	</script>
+	<link rel="stylesheet" href="style.css">
+	<title>Blog</title>
+	<style>
+		html,
+		body {
+			margin: 0;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+		}
+
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		header {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 20px;
+			background: #fffc00;
+		}
+
+		header i {
+			color: #ff4757;
+		}
+
+		header h1,
+		header i {
+			margin: 0 5px;
+			font-size: 6rem;
+		}
+
+		header ul {
+			display: flex;
+			font-weight: 700;
+		}
+
+		header li {
+			margin: 0 10px;
+			text-decoration: underline;
+		}
+
+		.logo-wrapper {
+			display: flex;
+			align-items: center;
+		}
+
+		.content {
+			display: flex;
+			background: #fffc00;
+			padding: 5rem;
+		}
+
+		section,
+		aside {
+			background: white;
+			margin: 15px;
+			padding: 20px;
+		}
+
+		section {
+			flex: 2;
+		}
+
+		.illustration {
+			margin: 20px;
+		}
+
+		.floated-left {
+			float: left;
+		}
+
+		.floated-right {
+			float: right;
+		}
+
+		aside {
+			flex: 1;
+		}
+
+		aside ul {
+			display: flex;
+			flex-direction: column;
+		}
+
+		aside li {
+			flex: 1;
+			align-self: stretch;
+			background: #ececec;
+			margin: 5px;
+			padding: 10px;
+		}
+
+		footer {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+			min-height: 500px;
+			background: black;
+			color: #fffc00;
+			padding: 2rem 0;
+		}
+
+		footer a {
+			color: #fffc00;
+			font-weight: 700;
+		}
+
+		footer a:active {
+			color: #fffc00;
+			font-weight: 700;
+		}
+
+		footer a:hover {
+			color: #fffc00;
+			font-weight: 700;
+		}
+
+		footer a:enabled {
+			color: #fffc00;
+			font-weight: 700;
+		}
+
+		.upper-footer {
+			display: flex;
+			align-items: center;
+			justify-content: space-evenly;
+			flex: 1;
+			align-self: stretch;
+		}
+
+		.socials {
+			display: flex;
+			flex-direction: column;
+			font-size: 1.6rem;
+		}
+
+		.socials i {
+			margin: 10px;
+		}
+
+		.back-to-top {
+			position: fixed;
+			bottom: 40px;
+			right: 40px;
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			background: #ff4757;
+			color: #fff;
+			font-size: 2rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="logo-wrapper">
+			<i class="fas fa-code"></i>
+      <h1>Mon blog!</h1>
+    </div>
+    <ul>
+      <li>Blog</li>
+      <li>CV</li>
+      <li>Contact</li>
+      <li>Social</li>
+    </ul>
+  </header>
+  <div class="content">
+    <section>
+      <img class="illustration floated-left" src="https://picsum.photos/400/300">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis, nunc sed gravida varius, massa nunc pharetra nulla,
+        ut finibus nibh mauris ac lorem. Fusce hendrerit convallis quam, ut consectetur felis placerat in.
+      </p>
+      <p>
+        Vestibulum sed nunc porttitor, varius libero in, consequat enim. Maecenas aliquet, metus vehicula hendrerit pharetra,
+        tellus orci
+        ullamcorper lectus, vel ornare purus ipsum et eros. Maecenas blandit nec elit vitae malesuada. Nulla dui urna, venenatis
+        id pellentesque vel, vehicula vitae neque.
+      </p>
+      <p>
+        Sed iaculis, mi vitae ornare luctus, nibh justo ultricies ante, in accumsan
+        libero mauris ac est. Vestibulum ullamcorper faucibus mauris at condimentum. Fusce dictum sapien sit amet lorem
+        pellentesque laoreet. Suspendisse eros neque, condimentum eget mauris in, faucibus vestibulum quam. Integer porttitor
+        interdum ligula, dictum porta eros iaculis posuere.
+      </p>
+      <p>
+        Maecenas odio neque, ultrices sed cursus et, porta id dolor. Sed
+        scelerisque, turpis et congue condimentum, justo urna semper enim, ac cursus nisi quam nec diam.
+      </p>
+      <img class="illustration floated-right" src="https://picsum.photos/400/300">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis, nunc sed gravida varius, massa nunc pharetra
+        nulla,
+        ut finibus nibh mauris ac lorem. Fusce hendrerit convallis quam, ut consectetur felis placerat in.
+      </p>
+      <p>
+        Vestibulum sed nunc porttitor, varius libero in, consequat enim. Maecenas aliquet, metus vehicula hendrerit pharetra,
+        tellus orci
+        ullamcorper lectus, vel ornare purus ipsum et eros. Maecenas blandit nec elit vitae malesuada. Nulla dui urna,
+        venenatis
+        id pellentesque vel, vehicula vitae neque.
+      </p>
+      <p>
+        Sed iaculis, mi vitae ornare luctus, nibh justo ultricies ante, in accumsan
+        libero mauris ac est. Vestibulum ullamcorper faucibus mauris at condimentum. Fusce dictum sapien sit amet lorem
+        pellentesque laoreet. Suspendisse eros neque, condimentum eget mauris in, faucibus vestibulum quam. Integer porttitor
+        interdum ligula, dictum porta eros iaculis posuere.
+      </p>
+      <p>
+        Maecenas odio neque, ultrices sed cursus et, porta id dolor. Sed
+        scelerisque, turpis et congue condimentum, justo urna semper enim, ac cursus nisi quam nec diam.
+      </p>
+    </section>
+    <aside>
+      <ul>
+        <li>Articles de Mars 2020</li>
+        <li>Articles de Février 2020</li>
+        <li>Articles de Janvier 2020</li>
+        <li>Articles de Décembre 2019</li>
+        <li>Articles de Novembre 2019</li>
+        <li>Articles de Octobre 2019</li>
+        <li>Archives</li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="upper-footer">
+      <div class="sitemap">
+        <ul>
+          <li><a href="Javascript:void(0);">Home</a></li>
+          <li><a href="Javascript:void(0);">A propos</a></li>
+          <li><a href="Javascript:void(0);">Sponsors</a></li>
+          <li><a href="Javascript:void(0);">Mes autres projets</a></li>
+        </ul>
+      </div>
+      <div class="socials">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </div>
+    <div class="watermark">@2020</div>
+  </footer>
+
+  <div class="back-to-top">
+    <i class="fas fa-rocket"></i>
+  </div>
+</body>
+</html>
